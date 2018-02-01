@@ -1,0 +1,51 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif!important;
+    letter-spacing: 0.02em;
+    background: #A5BCEF!important;
+    color: white!important;
+}
+
+.container {
+    padding: 0;
+}
+
+h1 {
+    float: right;
+    text-align: right;
+}
+
+#about {
+    float: right;
+}
+
+.menu {
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
+.menuIcon {
+    /*float: right;*/
+    cursor: pointer;
+}
+
+#menuToggle {
+    color: blue;
+}
+
+#menuToggle:checked ~ .menu {
+    position: absolute;
+    left: 0;
+    color: black;
+}
+
+#menuToggle:checked + .test {
+    background: red!important;
+    top: 250px;
+}
+
+.test {
+    position: relative;
+    top: 250px;
+}
