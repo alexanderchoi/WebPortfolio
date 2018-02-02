@@ -5,47 +5,41 @@ body {
     color: white!important;
 }
 
-.container {
-    padding: 0;
+#menuToggle {
+    display: none;
 }
 
-h1 {
+#iconToggle {
+    cursor: pointer;
     float: right;
-    text-align: right;
+    padding: 15px;
+    transform: scale(2);
 }
 
-#about {
-    float: right;
+#menuToggle:checked ~ #menu {
+    left: 15px;
 }
 
-.menu {
-    width: 240px;
+#menu {
+    width: 500px;
     height: 100%;
     position: absolute;
-    transition: all .3s ease-in-out;
+    left: -500px;
+    transition: all .5s ease-in-out;
+    background: black;
+    color: white;
+    width: 500px;
+    height: 100%;
+    padding: 25px;
+    font-size: 2.5em;
+    letter-spacing: 0.02em;
+    line-height: 1em;
 }
 
-.menuIcon {
-    /*float: right;*/
-    cursor: pointer;
-}
-
-#menuToggle {
-    color: blue;
-}
-
-#menuToggle:checked ~ .menu {
+#menuFootnote {
+    font-size: .4em;
+    letter-spacing: 0.02em;
+    line-height: 1em;
     position: absolute;
-    left: 0;
-    color: black;
-}
-
-#menuToggle:checked + .test {
-    background: red!important;
-    top: 250px;
-}
-
-.test {
-    position: relative;
-    top: 250px;
+    bottom: 0;
 }
