@@ -16,11 +16,22 @@ body {
 }
 
 .header-left {
-    grid-columns: 2 / 3;
+
 }
 
 .header-right {
-    grid-columns: 3 / 6;
+    grid-columns: 6 / 7;
+}
+
+.navi a {
+    color: black;
+    padding: 0 4px;
+    position: relative;
+}
+
+.navi a:hover {
+    text-decoration: none;
+    border-bottom: 0px;
 }
 
 .link-underline {
@@ -32,18 +43,6 @@ body {
     left: 0;
     background-color: #e4f8fe;
     z-index: -1;
-}
-
-.navi a {
-    color: black;
-    padding: 0 4px;
-    position: relative;
-    top: 50%;
-}
-
-.navi a:hover {
-    text-decoration: none;
-    border-bottom: 0px;
 }
 
 h1 {
@@ -154,4 +153,35 @@ h1 {
 
 .inline {
     display: inline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #F1C1A1;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.data-flickity {
+    wrapAround: true;
 }
