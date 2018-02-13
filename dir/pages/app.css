@@ -5,22 +5,24 @@ body {
 }
 
 .navi {
-    height: 100px;
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 60px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-rows: auto;
+    padding: 60px 20px;
     font-size: 1.3em;
     letter-spacing: 0.02em;
     line-height: 1.4em;
 }
 
 .header-left {
-
+    grid-column: 1 / 3;
+    padding: 0px 60px;
 }
 
 .header-right {
-    grid-columns: 6 / 7;
+    grid-column: 4;
+    position: relative;
+    /*float: right; not working yet*/
 }
 
 .navi a {
@@ -116,7 +118,7 @@ h1 {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     font-size: 1.3em;
     letter-spacing: 0.02em;
     line-height: 1.4em;
@@ -131,14 +133,17 @@ h1 {
 }
 
 @media (max-width: 767px) {
+    .navi {
+        grid-template-columns: 1fr;
+    }
+    .header-left {
+        text-align: center;
+    }
     .header-right {
         display: none;
     }
     #interests {
         display: none;
-    }
-    #footer.wrapper {
-        
     }
 }
 
@@ -151,8 +156,10 @@ h1 {
     }
 }
 
-.inline {
+#emailIcon {
     display: inline;
+    position: relative;
+    top: 2px;
 }
 
 * {
