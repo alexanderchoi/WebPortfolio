@@ -63,33 +63,46 @@ h1 {
     transform: scale(2);
 }
 
-#menuToggle:checked ~ #menu {
-    left: 15px;
+.body-wrapper {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    height: 300px;
 }
 
-#menu {
-    width: 500px;
-    height: 100%;
-    position: absolute;
-    left: -500px;
-    transition: all .5s ease-in-out;
-    background: black;
-    color: white;
-    width: 500px;
-    height: 100%;
-    padding: 25px;
-    font-size: 2em;
-    letter-spacing: 0.02em;
-    line-height: 1em;
+.video-portfolio {
+    grid-column: 2;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 auto;
 }
 
-#menuFootnote {
-    font-size: .4em;
-    letter-spacing: 0.02em;
-    line-height: 1em;
-    position: absolute;
-    bottom: 0;
-}
+/*#menuToggle:checked ~ #menu {*/
+/*    left: 15px;*/
+/*}*/
+
+/*#menu {*/
+/*    width: 500px;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    left: -500px;*/
+/*    transition: all .5s ease-in-out;*/
+/*    background: black;*/
+/*    color: white;*/
+/*    width: 500px;*/
+/*    height: 100%;*/
+/*    padding: 25px;*/
+/*    font-size: 2em;*/
+/*    letter-spacing: 0.02em;*/
+/*    line-height: 1em;*/
+/*}*/
+
+/*#menuFootnote {*/
+/*    font-size: .4em;*/
+/*    letter-spacing: 0.02em;*/
+/*    line-height: 1em;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*}*/
 
 #info {
     width: 420px;
@@ -159,35 +172,4 @@ h1 {
     display: inline;
     position: relative;
     top: 2px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.carousel {
-  background: #EEE;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #F1C1A1;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
-.data-flickity {
-    wrapAround: true;
 }
