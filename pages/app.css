@@ -149,25 +149,25 @@ h1 {
     .header-left {
         grid-column: 1;
         text-align: center;
-        font-size: 2em;
+        /*font-size: 2em;*/
     }
     .header-right {
         display: none;
     }
-    h1 {
-        font-size: 5em!important;
-    }
-    .video-portfolio {
-        font-size: 2.5em;
-        padding: 100px 0px;
-    }
+    /*h1 {*/
+    /*    font-size: 5em!important;*/
+    /*}*/
+    /*.video-portfolio {*/
+    /*    font-size: 2.5em;*/
+    /*    padding: 100px 0px;*/
+    /*}*/
     #about {
-        font-size: 3em;
+        /*font-size: 3em;*/
         padding: 0px 140px;
-        height: 1000px;
+        /*height: 1000px;*/
     }
     #footer {
-        font-size: 3em;
+        /*font-size: 3em;*/
         padding: 0px 140px;
     }
 }
