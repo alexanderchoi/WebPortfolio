@@ -49,7 +49,7 @@ a:link {
     height: 60%;
     top: 60%;
     left: 0;
-    background-color: #e4f8fe;
+    background-color: #DEF8FFv;
     z-index: -1;
 }
 
@@ -128,7 +128,7 @@ h1 {
     grid-column: 1 / 7;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 549px) {
     .navi {
         grid-template-columns: 1fr;
     }
@@ -157,7 +157,7 @@ h1 {
         grid-column: 2;
     }
     .wrapper {
-        grid-template-columns: 150px 1fr 150px;
+        grid-template-columns: 25px 1fr 25px;
         text-align: center;
     }
     .bio {
@@ -165,7 +165,7 @@ h1 {
     }
 }
 
-@media (min-width : 1081px) {
+@media (min-width : 550px) {
     .bio {
         grid-column: 2 / 4;
     }
