@@ -66,6 +66,16 @@ h1 {
     font-size: 3.3em!important;
 }
 
+h2 {
+    font-family: "Inconsolata", "Helvetica", sans-serif!important;
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 0.1em;
+    font-size: 1.4em!important;
+    position: relative;
+    bottom: 10px;
+}
+
 #menuToggle {
     display: none;
 }
@@ -80,14 +90,25 @@ h1 {
 .body-wrapper {
     display: grid;
     grid-template-columns: 15% 1fr 15%;
-    height: 300px;
+    height: 500px;
+    padding: 100px;
+}
+
+.body-wrapper a {
+    font-size: 1.3em;
 }
 
 .video-portfolio {
     grid-column: 2;
     text-align: center;
-    padding-top: 100px;
-    margin: 0 auto;
+    padding-top: 120px;
+    background: #DEF8FF;
+    position: relative;
+}
+
+.video-portfolio:hover {
+    transition: 0.5s;
+    background: #C2F3FF;
 }
 
 #info {
