@@ -146,6 +146,8 @@ h2 {
 }
 
 .social {
+    /*text-decoration: none;*/
+    /*color: black;*/
     grid-column: 1 / 7;
 }
 
