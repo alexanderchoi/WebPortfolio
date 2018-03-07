@@ -99,16 +99,22 @@ h2 {
 }
 
 .video-portfolio {
+    font-weight: 900;
     grid-column: 2;
     text-align: center;
     padding-top: 120px;
-    background: #DEF8FF;
+    background: white;
     position: relative;
+    font-size: 3em;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .video-portfolio:hover {
-    transition: 0.5s;
-    background: #C2F3FF;
+    transition: 0.5s ease-in-out;
+    background: #DEF8FF;
 }
 
 #info {
