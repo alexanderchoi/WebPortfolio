@@ -80,6 +80,10 @@ h2 {
     bottom: 10px;
 }
 
+h4 {
+    margin: 0px;
+}
+
 #menuToggle {
     display: none;
 }
@@ -109,18 +113,13 @@ h2 {
     font-size: 1em;
 }
 
-.video-portfolio {
+.item-wrapper {
     font-weight: 900;
     grid-column: 2;
     text-align: center;
     position: relative;
     font-size: 3em;
     margin: auto;
-}
-
-.video-portfolio:hover {
-    transition: 0.5s ease-in-out;
-    /*background: #DEF8FF;*/
 }
 
 #info {
@@ -191,6 +190,9 @@ h2 {
     }
     .bio {
         grid-column: 2;
+    }
+    .item-wrapper h4 {
+        display: none;
     }
 }
 
