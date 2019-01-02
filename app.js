@@ -8,7 +8,8 @@ app.get('/', function(req, res) {
     res.render('index');
 })
 
-
-app.listen(process.env.PORT, process.env.IP, function() {
-    console.log(`[Server started]`);
-})
+const port = process.env.PORT || 5000;
+// app.listen(process.env.PORT, process.env.IP, function() {
+//     console.log(`[Server started]`);
+// })
+app.listen(port, () => console.log(`Server started on ${port}...`));
