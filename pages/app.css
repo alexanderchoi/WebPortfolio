@@ -1,7 +1,6 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif!important;
-    background: white;
-    color: #383838!important;
+	font-family: 'Helvetica Neue', Arial, sans-serif!important;
+	color: #383838!important;
 }
 
 * {
@@ -75,24 +74,26 @@ h2 {
 
 .two {
 	width: 90%;
-	height: 500px;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 .wrapper-grid {
 	display: grid;
 	grid-template-rows: 700px;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 20px;
-	grid-row-gap: 25px;
+	grid-column-gap: 25px;
+	grid-row-gap: 35px;
 }
 
 .card {
-	background-color: lightgrey;
+	background-color: #f2f2f2;
 	height: 700px;
-	box-shadow: 5px 10px;
 	overflow: hidden;
 	position: relative;
+	border-radius: .5em;
+	-webkit-box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
+	-moz-box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
+	box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
 }
 
 .div-cardImage {
@@ -140,14 +141,18 @@ h2 {
 	margin-top: .7em;
 }
 
-.div-cardLinks a{
+.div-cardLinks a {
 	text-decoration: none;
 	font-size: 1.2em;
-	background-color: #ffc054;
+	background-color: #5492ff;
 	border-radius: .2em;
-	padding: .1em .5em;
-	color: gray;
+	padding: .2em .5em;
+	color: #f2f2f2;
 	font-weight: 700;
+}
+
+.div-cardLinks a:hover {
+	color: #f2f2f2;
 }
 
 
@@ -355,10 +360,49 @@ h4 {
     grid-column: 1 / 7;
 }
 
-
-
 #emailIcon {
     display: inline;
     position: relative;
     top: 2px;
+}
+
+/* fadeanimation */
+
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+ 
+.fade-in.one {
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
 }
