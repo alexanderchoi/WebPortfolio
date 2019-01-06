@@ -4,6 +4,115 @@ body {
     color: #383838!important;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Desktop wide breakpoint */
+@media screen and (max-width: 1366px) {
+	
+}
+
+/* Tablet breakpoint */
+@media screen and (max-width: 1024px) {
+	.wrapper-grid {
+		grid-template-columns: repeat(2, 1fr)!important;
+	}
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 375px) {
+	.wrapper-grid {
+		grid-template-columns: 1fr!important;
+	}
+}
+
+
+.two {
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.wrapper-grid {
+	display: grid;
+	grid-template-rows: 700px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 25px;
+}
+
+.card {
+	background-color: lightgrey;
+	height: 700px;
+	box-shadow: 5px 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.div-cardImage {
+	height: 300px;
+	overflow: hidden;
+}
+
+.card img {
+	max-width: 100%;
+	width: auto;
+}
+
+.div-cardInfo {
+	padding: 1em 1.5em;
+	font-size: 1.7rem;
+	line-height: 2rem;
+}
+
+.cardTitle {
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.cardInfo {
+
+}
+
+.div-cardBottom {
+	position: absolute;
+	bottom: 1.5em;
+	padding-right: 1.5em;
+}
+
+.div-cardTechUsed span {
+	background-color: white;
+	border-radius: .2em;
+	padding: .1em .5em;
+	line-height: 1.5em;
+	font-size: .8em;
+	font-weight: 700;
+}
+
+.div-cardLinks {
+	margin-top: .7em;
+}
+
+.div-cardLinks a{
+	text-decoration: none;
+	font-size: 1.2em;
+	background-color: #ffc054;
+	border-radius: .2em;
+	padding: .1em .5em;
+	color: gray;
+	font-weight: 700;
+}
+
+#img-mango {
+	width: auto;
+	height: 100%;
+}
+
+
+
+
 @media (max-width: 549px) {
 	.navi {
 			grid-template-columns: 1fr;
@@ -57,57 +166,6 @@ body {
 	background-image: url('./img/LosAngeles.jpeg');
 	background-size: 100%;
 }
-
-.two {
-	width: 90%;
-	height: 500px;
-	margin: 0 auto;
-}
-
-.wrapper-grid {
-	display: grid;
-	grid-template-rows: 700px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 20px;
-	grid-row-gap: 25px;
-}
-
-.card {
-	background-color: lightgrey;
-	height: 700px;
-	box-shadow: 5px 10px;
-	overflow: hidden;
-}
-
-.div-cardImage {
-	height: 300px;
-	overflow: hidden;
-}
-
-.card img {
-	max-width: 100%;
-	width: auto;
-}
-
-.div-cardInfo {
-	padding: 2em;
-	font-size: 2rem;
-	line-height: 2rem;
-}
-
-.div-cardTech {
-	
-}
-
-.div-cardLinks {
-
-}
-
-
-
-
-
-
 
 .header {
     padding-bottom: 40px;
