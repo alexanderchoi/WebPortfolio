@@ -1,17 +1,213 @@
 body {
-    font-family: 'Inconsolata', 'Helvetica Neue', Arial, sans-serif!important;
-    background: white;
-    color: #383838!important;
+	font-family: 'Helvetica Neue', Arial, sans-serif!important;
+	color: #383838!important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Desktop wide breakpoint */
+@media screen and (max-width: 1366px) {
+	
+}
+
+/* Tablet breakpoint */
+@media screen and (max-width: 1024px) {
+	.wrapper-grid {
+		grid-template-columns: repeat(2, 1fr)!important;
+	}
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 700px) {
+	.wrapper-grid {
+		grid-template-columns: 1fr!important;
+	}
+
+	h1 {
+		color: white!important;
+	}
+
+	h2 {
+		color: white!important;
+	}
+
+}
+
+.one {
+	width: 100%;
+	background-image: url('./img/LosAngeles.jpeg');
+	background-size: 100%;
+}
+
+.nav {
+	width: 100%;
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2em;
+}
+
+.nav-links a {
+	padding: 0 5px;
+}
+
+h1 {
+	letter-spacing: 0.02em;
+	text-align: center;
+	line-height: 0.1em;
+	font-size: 3.3em!important;
+	font-weight: 800;
+	color: white;
+	margin-top: 60px!important;
+}
+
+h2 {
+	color: white;
+	letter-spacing: 0.04em;
+	text-align: center;
+	line-height: 0.1em;
+	font-size: 1.4em!important;
+	margin-top: 0px!important;
+}
+
+.two {
+	width: 90%;
+	margin: 50px auto;
+}
+
+.wrapper-grid {
+	display: grid;
+	grid-template-rows: 700px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 25px;
+	grid-row-gap: 35px;
+}
+
+.card {
+	background-color: #f2f2f2;
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	border-radius: .5em;
+	-webkit-box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
+	-moz-box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
+	box-shadow: 5px 10px 54px -2px rgba(145,145,145,1);
+}
+
+.div-cardImage {
+	height: 300px;
+	overflow: hidden;
+}
+
+.card img {
+	max-width: 100%;
+	width: auto;
+}
+
+.div-cardInfo {
+	padding: 1em 1.5em;
+	font-size: 1.7rem;
+	line-height: 2rem;
+}
+
+.cardTitle {
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.cardInfo {
+
+}
+
+.div-cardBottom {
+	position: absolute;
+	bottom: 1.5em;
+	padding-right: 1.5em;
+}
+
+.div-cardTechUsed span {
+	background-color: white;
+	border-radius: .2em;
+	padding: .1em .5em;
+	line-height: 1.5em;
+	font-size: .8em;
+	font-weight: 700;
+}
+
+.div-cardLinks {
+	margin-top: .7em;
+}
+
+.div-cardLinks a {
+	text-decoration: none;
+	font-size: 1.2em;
+	background-color: #5492ff;
+	border-radius: .2em;
+	padding: .2em .5em;
+	color: #f2f2f2;
+	font-weight: 700;
+}
+
+.div-cardLinks a:hover {
+	color: #f2f2f2;
+}
+
+
+@media (max-width: 549px) {
+	.navi {
+			grid-template-columns: 1fr;
+	}
+	.header-left {
+			grid-column: 1;
+			text-align: center;
+			/*font-size: 2em;*/
+	}
+	.header-right {
+			display: none;
+	}
+	.video-portfolio {
+			font-size: 2.2em;
+	}
+	#about {
+			grid-column: 2;
+	}
+	#footer {
+			grid-column: 2;
+	}
+	.wrapper {
+			grid-template-columns: 25px 1fr 25px;
+			text-align: center;
+	}
+	.bio {
+			grid-column: 2;
+	}
+	.item-wrapper h4 {
+			display: none;
+	}
+}
+
+@media (min-width : 550px) {
+	.bio {
+			grid-column: 2 / 4;
+	}
+	.social {
+			grid-column: 5 / 7;
+	}
 }
 
 .navi {
-    display: grid;
-    grid-template-columns: 15% repeat(3, 1fr) 20%;
-    grid-rows: auto;
-    padding: 60px 20px;
-    font-size: 1.3em;
-    letter-spacing: 0.02em;
-    line-height: 1.4em;
+	display: grid;
+	grid-template-columns: 15% repeat(3, 1fr) 20%;
+	grid-rows: auto;
+	padding: 60px 20px;
+	font-size: 1.3em;
+	letter-spacing: 0.02em;
+	line-height: 1.4em;
+	background-image: url('./img/LosAngeles.jpeg');
+	background-size: 100%;
 }
 
 .header {
@@ -62,12 +258,13 @@ a:link {
     background: #fff;
 }
 
-h1 {
+/* h1 {
     font-family: "Helvetica Neue", "Helvetica", sans-serif!important;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     text-align: center;
     line-height: 0.1em;
-    font-size: 3.3em!important;
+		font-size: 3.3em!important;
+		font-weight: 700;
 }
 
 h2 {
@@ -78,7 +275,7 @@ h2 {
     font-size: 1.4em!important;
     position: relative;
     bottom: 10px;
-}
+} */
 
 h4 {
     margin: 0px;
@@ -163,50 +360,49 @@ h4 {
     grid-column: 1 / 7;
 }
 
-@media (max-width: 549px) {
-    .navi {
-        grid-template-columns: 1fr;
-    }
-    .header-left {
-        grid-column: 1;
-        text-align: center;
-        /*font-size: 2em;*/
-    }
-    .header-right {
-        display: none;
-    }
-    .video-portfolio {
-        font-size: 2.2em;
-    }
-    #about {
-        grid-column: 2;
-    }
-    #footer {
-        grid-column: 2;
-    }
-    .wrapper {
-        grid-template-columns: 25px 1fr 25px;
-        text-align: center;
-    }
-    .bio {
-        grid-column: 2;
-    }
-    .item-wrapper h4 {
-        display: none;
-    }
-}
-
-@media (min-width : 550px) {
-    .bio {
-        grid-column: 2 / 4;
-    }
-    .social {
-        grid-column: 5 / 7;
-    }
-}
-
 #emailIcon {
     display: inline;
     position: relative;
     top: 2px;
+}
+
+/* fadeanimation */
+
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+ 
+.fade-in.one {
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
 }
