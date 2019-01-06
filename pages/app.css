@@ -79,7 +79,7 @@ h2 {
 
 .wrapper-grid {
 	display: grid;
-	grid-template-rows: 700px;
+	grid-template-rows: 650px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 25px;
 	grid-row-gap: 35px;
@@ -87,7 +87,7 @@ h2 {
 
 .card {
 	background-color: #f2f2f2;
-	height: 700px;
+	height: 650px;
 	overflow: hidden;
 	position: relative;
 	border-radius: .5em;
@@ -107,7 +107,7 @@ h2 {
 }
 
 .div-cardInfo {
-	padding: 1em 1.5em;
+	padding: 1.2em 1.5em 1em 1.5em;
 	font-size: 1.7rem;
 	line-height: 2rem;
 }
