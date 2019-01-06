@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inconsolata', 'Helvetica Neue', Arial, sans-serif!important;
+    font-family: 'Helvetica Neue', Arial, sans-serif!important;
     background: white;
     color: #383838!important;
 }
@@ -21,12 +21,57 @@ body {
 }
 
 /* Mobile breakpoint */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
 	.wrapper-grid {
 		grid-template-columns: 1fr!important;
 	}
+
+	h1 {
+		color: white!important;
+	}
+
+	h2 {
+		color: white!important;
+	}
+
 }
 
+.one {
+	width: 100%;
+	background-image: url('./img/LosAngeles.jpeg');
+	background-size: 100%;
+}
+
+.nav {
+	width: 100%;
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2em;
+}
+
+.nav-links a {
+	padding: 0 5px;
+}
+
+h1 {
+	letter-spacing: 0.02em;
+	text-align: center;
+	line-height: 0.1em;
+	font-size: 3.3em!important;
+	font-weight: 800;
+	color: white;
+	margin-top: 60px!important;
+}
+
+h2 {
+	color: white;
+	letter-spacing: 0.04em;
+	text-align: center;
+	line-height: 0.1em;
+	font-size: 1.4em!important;
+	margin-top: 0px!important;
+}
 
 .two {
 	width: 90%;
@@ -104,13 +149,6 @@ body {
 	color: gray;
 	font-weight: 700;
 }
-
-#img-mango {
-	width: auto;
-	height: 100%;
-}
-
-
 
 
 @media (max-width: 549px) {
@@ -215,12 +253,13 @@ a:link {
     background: #fff;
 }
 
-h1 {
+/* h1 {
     font-family: "Helvetica Neue", "Helvetica", sans-serif!important;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     text-align: center;
     line-height: 0.1em;
-    font-size: 3.3em!important;
+		font-size: 3.3em!important;
+		font-weight: 700;
 }
 
 h2 {
@@ -231,7 +270,7 @@ h2 {
     font-size: 1.4em!important;
     position: relative;
     bottom: 10px;
-}
+} */
 
 h4 {
     margin: 0px;
