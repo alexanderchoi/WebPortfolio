@@ -33,6 +33,10 @@ body {
 		color: white!important;
 	}
 
+	.div-profile {
+		display:none!important;
+	}
+
 }
 
 .one {
@@ -51,6 +55,18 @@ body {
 
 .nav-links a {
 	padding: 0 5px;
+}
+
+.div-profile {
+	padding-top: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+#profile {
+	height: 150px;
+	border: 3px solid #ae976f;
+	border-radius: 0.8em
 }
 
 .header {
