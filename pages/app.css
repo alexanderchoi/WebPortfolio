@@ -167,12 +167,20 @@ h2 {
 	background-color: #5492ff;
 	border-radius: .2em;
 	padding: .2em .5em;
+	margin-right: 3px;
 	color: #f2f2f2;
 	font-weight: 700;
+	
 }
 
 .div-cardLinks a:hover {
 	color: #f2f2f2;
+	position: relative;
+	bottom: .5px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 3px 27px -6px rgba(189,199,255,1);
+	-moz-box-shadow: 2px 3px 27px -6px rgba(189,199,255,1);
+	box-shadow: 2px 3px 27px -6px rgba(189,199,255,1);
 }
 
 .three {
