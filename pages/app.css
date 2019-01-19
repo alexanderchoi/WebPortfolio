@@ -37,6 +37,9 @@ body {
 		display:none!important;
 	}
 
+	.three {
+		width: 80%!important;
+	}
 }
 
 .one {
@@ -184,10 +187,8 @@ h2 {
 }
 
 .three {
-	width: 90%;
-	height: 300px;
-	margin: 0 auto;
-	background-color: blue;
+	width: 40%;
+	margin: 100px auto;
 }
 
 
